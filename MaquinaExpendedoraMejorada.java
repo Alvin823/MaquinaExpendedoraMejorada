@@ -90,24 +90,17 @@ public class MaquinaExpendedoraMejorada {
         if (cantidadDeDineroQueFalta<=0) { 
             // Simula la impresion de un billete
             if(billetePremio ==true){ 
-                System.out.println("##################");
-            System.out.println("# Billete de tren:");
-            System.out.println("# De " + estacionOrigen + " a " + estacionDestino);
-            System.out.println("# " + precioBillete + " euros.");
             System.out.println( ((precioBillete*10)/100)  + "€ de descuento en Mercadona");
-            System.out.println("##################");
-            System.out.println();        
+            }
+            else{ 
                 
             }
-            else{
             System.out.println("##################");
             System.out.println("# Billete de tren:");
             System.out.println("# De " + estacionOrigen + " a " + estacionDestino);
             System.out.println("# " + precioBillete + " euros.");
             System.out.println("##################");
             System.out.println();         
-                
-            }
             // Actualiza el total de dinero acumulado en la maquina
             totalDineroAcumulado = totalDineroAcumulado + precioBillete;
             // Reduce el balance del cliente actual dejandole seguir utilizando la maquina
