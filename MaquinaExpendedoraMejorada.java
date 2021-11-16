@@ -120,7 +120,7 @@ public class MaquinaExpendedoraMejorada {
             balanceClienteActual = balanceClienteActual - precioBillete;
             // Actualiza el número de billetes vendidos
             cantidadDeBilletesVendidos= cantidadDeBilletesVendidos + 1;
-        }
+            }   
             else if(cantidadDeDineroQueFalta >0) {
             System.out.println("Necesitas introducir " + (cantidadDeDineroQueFalta) + " euros mas!");
                     
