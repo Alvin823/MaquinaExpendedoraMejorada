@@ -108,8 +108,11 @@ public class MaquinaExpendedoraMejorada {
         else{
             // Simula la impresion de un billete
             if (cantidadDeDineroQueFalta<=0){
-                if(tercerBillete==2){ 
+                if(billetePremio ==true){ 
+                    if(tercerBillete==2){ 
                     System.out.println( ((precioBillete*10)/100)  + "€ de descuento en Mercadona");
+                }
+                    
                 }
             
                 System.out.println("##################");
@@ -126,8 +129,8 @@ public class MaquinaExpendedoraMejorada {
                 cantidadDeBilletesVendidos= cantidadDeBilletesVendidos + 1;
                 // Suma billete
                 tercerBillete = tercerBillete + 1;
-                if(tercerBillete==3){
-                    tercerBillete = 0;
+                if(tercerBillete ==3){
+                    tercerBillete =0;
                 }
             } 
             else if(cantidadDeDineroQueFalta >0) {
